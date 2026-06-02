@@ -12,6 +12,8 @@ public class TesterFinch{
         bird.setBeak(100, 50, 60);
 
         bird.paintAllHouses();
+        bird.paintAllHouses();
+        bird.paintAllHouses();
 
 
 

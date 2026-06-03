@@ -9,18 +9,19 @@ public class FinalFinch extends Finch{
     }
 
     //write custom methods
-    public void paintAllHouses() {
-        paintOneHouse();
-        // write code to get to next house
-        setTurn("R", 90, 50);
-        setMove("F", 1.75, 100);
-        setMove("F", 3, 100);
-        setTurn("R", 90, 50);
-        setMove("F", 5, 100);
-        setTurn("L", 180, 50);
-
-
-
+    public void paintAllHouses(int num) {
+        for (int i = 1; i <= num; i++) {
+            paintOneHouse(); 
+            if (i != num) {
+                // write code to get to next house
+                setTurn("R", 90, 50);
+                setMove("F", 1.75, 100);
+                setMove("F", 3, 100);
+                setTurn("R", 90, 50);
+                setMove("F", 5, 100);
+                setTurn("L", 180, 50);
+            }
+        }
     }
 
     public void paintOneHouse() {

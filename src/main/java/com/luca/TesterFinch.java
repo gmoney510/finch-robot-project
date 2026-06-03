@@ -7,13 +7,11 @@ public class TesterFinch{
     public static void main(String[] args){
      
         //Start of program
-        FinalFinch bird = new FinalFinch("A");
+        FinalFinch bird = new FinalFinch("B");
 
         bird.setBeak(100, 50, 60);
 
-        bird.paintAllHouses();
-        bird.paintAllHouses();
-        bird.paintAllHouses();
+        bird.paintAllHouses(3);
 
 
 

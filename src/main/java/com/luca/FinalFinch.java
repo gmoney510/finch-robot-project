@@ -8,12 +8,12 @@ public class FinalFinch extends Finch{
         super(device);
     }
 
-    //write custom methods
+    //for loop to draw num amount of houses
     public void paintAllHouses(int num) {
         for (int i = 1; i <= num; i++) {
             paintOneHouse(); 
             if (i != num) {
-                // write code to get to next house
+                // code to get to next house
                 setTurn("R", 90, 50);
                 setMove("F", 1.75, 100);
                 setMove("F", 3, 100);
@@ -25,7 +25,7 @@ public class FinalFinch extends Finch{
     }
 
     public void paintOneHouse() {
-        //Square
+        // code to draw Square
         setMove("F", 5, 100);
         setTurn("R", 90, 50);
         setMove("F", 5, 100);
@@ -33,14 +33,14 @@ public class FinalFinch extends Finch{
         setMove("F", 5, 100);
         setTurn("R", 90, 50);
         setMove("F", 5.5, 100);
-        //triangle
+        //code to draw triangle
         setMove("B", 5.5, 100);
         setTurn("L", 45, 50);
         setMove("F", 4, 100);
         setTurn("R", 95, 50);
         setMove("F", 4, 100);
 
-        //door
+        //code to draw door
          setTurn("R", 45, 50);
          setMove("F", 5, 100);
          setTurn("R", 90, 50);
